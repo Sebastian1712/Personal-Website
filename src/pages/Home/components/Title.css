@@ -1,17 +1,11 @@
-h1 {
-    color: #fff;
+div {
+    margin-top: 23%;
+    margin-left: 1rem;
 }
 
-section {
+.titleDiv h1, .titleDiv p{
+    color: #fff;
     display: flex;
-    justify-content: left;
-    width: 500px;
-    margin-top: 20%;
-}
-
-p {
-    color: #fff;
-    text-align:left;
-    width: 500px;
-    margin-left: 25%;
+    vertical-align: top;
+    text-align: left;
 }
