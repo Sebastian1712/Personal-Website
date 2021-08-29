@@ -9,3 +9,13 @@ div {
     vertical-align: top;
     text-align: left;
 }
+
+p {
+    line-height: 10px;
+}
+
+.secondPar {
+    text-decoration: underline;
+    text-decoration-thickness: .15rem;
+    text-decoration-color: #713EDC;
+}
