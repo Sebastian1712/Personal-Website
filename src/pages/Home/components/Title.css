@@ -1,0 +1,17 @@
+h1 {
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: left;
+    width: 500px;
+    margin-top: 20%;
+}
+
+p {
+    color: #fff;
+    text-align:left;
+    width: 500px;
+    margin-left: 25%;
+}

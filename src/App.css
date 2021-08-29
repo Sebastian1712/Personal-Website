@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;800&display=swap');
+
+body {
+  background-color: #161C1C;
+  font-family: 'Mulish', sans-serif;
+}
+
 .App {
   text-align: center;
 }

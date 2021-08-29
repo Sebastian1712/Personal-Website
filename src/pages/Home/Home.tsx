@@ -1,10 +1,10 @@
 import React from 'react';
-import './Home.css';
+import Title from './components/Title';
 
 function Home() {
     return (
       <div className="homeDiv">
-        <h1>Sebastian Hernandez</h1>
+        <Title/>
       </div>
     );
   }
