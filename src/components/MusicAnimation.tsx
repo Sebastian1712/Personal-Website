@@ -7,11 +7,6 @@ function MusicAnimation() {
         <span className="stroke"></span>
         <span className="stroke"></span>
         <span className="stroke"></span>
-        <text className="sText">vibin'</text>
-        {/* <span className="stroke"></span>
-        <span className="stroke"></span>
-        <span className="stroke"></span>
-        <span className="stroke"></span> */}
       </div>
     );
   }
