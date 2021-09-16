@@ -1,6 +1,6 @@
-div {
+/* div {
     margin-top: 15%;
-}
+} */
 
 .titleDiv h1 {
     color: #fff;
@@ -9,6 +9,7 @@ div {
     vertical-align: top;
     text-align: center;
     font-size: 40px;
+    margin-top: 10%;
 }
 
 .titleDiv p {
