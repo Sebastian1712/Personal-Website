@@ -1,10 +1,12 @@
 import React from 'react';
-import './Home.css';
+import Title from './components/Title';
+import MusicAnimation from '../../components/MusicAnimation';
 
 function Home() {
     return (
       <div className="homeDiv">
-        <h1>Sebastian Hernandez</h1>
+        <Title/>
+        <MusicAnimation/>
       </div>
     );
   }
