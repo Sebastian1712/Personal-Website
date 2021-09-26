@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavBarElements'
+import { Nav, NavLink, Bars, NavMenu, NavBtn, MainNavLink } from './NavBarElements'
 
 const NavBar = () => {
     return (
@@ -17,6 +17,9 @@ const NavBar = () => {
                         .giveRecommendations()
                     </NavLink>
                 </NavMenu>
+                <MainNavLink className="home-page" to="/" activestyle>
+                        Sebastian()
+                </MainNavLink>
             </Nav>
         </>
     )
