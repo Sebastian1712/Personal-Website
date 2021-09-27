@@ -1,0 +1,9 @@
+.passionsDiv h1 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
