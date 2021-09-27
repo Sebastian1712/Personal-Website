@@ -20,7 +20,7 @@ export const NavLink = styled(Link) `
     padding: 0 1rem;
     padding-top: 50px;
     cursor: pointer;
-
+    
     &:after {
         content: '';
         position: absolute;
@@ -32,9 +32,12 @@ export const NavLink = styled(Link) `
         transition: transform 0.3s ease;
     }
 
-    &:hover::after {
+    &:hover::after, &:focus::after {
         transform: scale(.7, 1);
     }
+    /* &:focus {
+        transform: scale(.7, 1);
+    } */
 `
 
 export const Bars = styled(FaBars) `
@@ -46,7 +49,7 @@ export const Bars = styled(FaBars) `
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 75%)
+        transform: translate(-100%, 75%);
         cursor: pointer;
     }
 `
@@ -92,7 +95,7 @@ export const MainNavLink = styled(Link) `
         transition: transform 0.3s ease;
     }
 
-    &:hover::after {
+    &:hover::after, &:focus::after {
         transform: scale(.7, 1);
     }
 `
