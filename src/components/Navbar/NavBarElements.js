@@ -6,11 +6,14 @@ export const Nav = styled.nav`
     background: #0C0B0B;
     height: 80px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     z-index: 10;
 `
+
 export const NavLink = styled(Link) `
     color: #fff;
+    position: relative;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -18,8 +21,19 @@ export const NavLink = styled(Link) `
     padding-top: 50px;
     cursor: pointer;
 
-    &: hover {
-        color: #a801ff;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 85%;
+        height: 0.175rem;
+        top: 75px;
+        background: linear-gradient(45deg, #a801ff, #0006ff);;
+        transform: scale(0, 1);
+        transition: transform 0.3s ease;
+    }
+
+    &:hover::after {
+        transform: scale(.7, 1);
     }
 `
 
@@ -65,7 +79,20 @@ export const MainNavLink = styled(Link) `
     padding-top: 50px;
     cursor: pointer;
 
-    &: hover {
-        color: #a801ff;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.175rem;
+        bottom: 0;
+        left: 0;
+        top: 75px;
+        background: linear-gradient(45deg, #a801ff, #0006ff);;
+        transform: scale(0, 1);
+        transition: transform 0.3s ease;
+    }
+
+    &:hover::after {
+        transform: scale(.7, 1);
     }
 `
