@@ -52,7 +52,7 @@ function Title() {
     return (
         <TitleDiv>
           <CircleFrame/>
-          <Intro>Hi, I'm Sebastián</Intro>
+          <Intro>Hi, I'm Sebastián!</Intro>
           <TitleParagraph>
             I’m a knowledge seeker who loves computer science 💻,<br></br>
             music 🎹, philosophy 💭, nature 🍃, and much more ⚽️! 
