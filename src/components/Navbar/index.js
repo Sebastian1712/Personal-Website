@@ -7,19 +7,16 @@ const NavBar = () => {
             <Nav>
                 <Bars/>
                 <NavMenu>
-                    <NavLink to="/passions" activestyle>
-                        .getPassions()
+                    <NavLink to="/" activestyle>
+                        Home
                     </NavLink>
                     <NavLink to="/experiences" activestyle>
-                        .getExperiences()
+                        Experiences
                     </NavLink>
-                    <NavLink to="/recommendations" activestyle>
-                        .giveRecommendations()
+                    <NavLink to="/self" activestyle>
+                        Self
                     </NavLink>
                 </NavMenu>
-                <MainNavLink className="home-page" to="/" activestyle>
-                        Sebastian()
-                </MainNavLink>
             </Nav>
         </>
     )
