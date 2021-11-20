@@ -19,20 +19,6 @@ export const NavLink = styled(Link) `
     padding: 0 2rem 0;
     cursor: pointer;
     
-    /* &:after {
-        content:'';
-        position: absolute;
-        width: 100%;
-        height: 0.175rem;
-        top: 75px;
-        background: linear-gradient(45deg, #a801ff, #0006ff);;
-        transform: scale(0, 1);
-        transition: transform 0.3s ease;
-    }
-    &:hover:after {
-        transform: scale(.7, 1);
-    } */
-    
     /* Fade in */
    &::after {
         top: 23px;
@@ -100,19 +86,4 @@ export const MainNavLink = styled(Link) `
     padding: 0 1rem;
     padding-top: 50px;
     cursor: pointer;
-    /* &:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 0.175rem;
-        bottom: 0;
-        left: 0;
-        top: 75px;
-        background: linear-gradient(45deg, #a801ff, #0006ff);;
-        transform: scale(0, 1);
-        transition: transform 0.3s ease;
-    }
-    &:hover::after, &:focus::after {
-        transform: scale(.7, 1);
-    } */
 `
