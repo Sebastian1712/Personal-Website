@@ -3,6 +3,9 @@ import githubIcon from '../../public/GitHub-Mark-Light-120px-plus.png'
 import linkedInIcon from '../../public/linkedInIcon.png'
 import mailIcon from '../../public/whiteMailIcon.png'
 import styled from 'styled-components'
+import { SiGithub, SiLinkedin, SiGmail } from 'react-icons/si';
+import './Icons.css';
+
 
 const IconsDiv = styled.div`
     /* background-color: #fff; */
@@ -28,27 +31,18 @@ const IconImage = styled.img`
   }
 `;
 
-const IconSvg = styled.svg`
-    width: 30px;
-    height: 30px;
-    padding-right: 5%;
-    ${IconLinks}:hover & {
-    fill: #7736FF;
-  }
-`;
-
 function Icons() {
     return (
     <>
         <IconsDiv>
-            <IconLinks href="https://github.com/Sebastian1712">
-                <IconImage src={githubIcon}/>
+            <IconLinks href="https://github.com/Sebastian1712" className="iconDiv">
+                <SiGithub color="#fff" size="30" className="icon"></SiGithub>
             </IconLinks>
             <IconLinks href="https://www.linkedin.com/in/sebastianoctavio17/">
-                <IconImage src={linkedInIcon}/>
+                <SiLinkedin color="#fff" size="30" className="icon"></SiLinkedin>
             </IconLinks>
             <IconLinks href="mailto:sebaoctavio@gmail.com">
-                <IconImage src={mailIcon}/>
+            <SiGmail color="#fff" size="30" className="icon"></SiGmail>
             </IconLinks>
         </IconsDiv>
     </>
@@ -56,3 +50,16 @@ function Icons() {
 }
 
 export default Icons;
+
+const socials = [
+    {
+      href: 'https://github.com/Sebastian1712',
+      icon: SiGithub,
+      text: 'Github',
+    },
+    {
+      href: 'https://www.linkedin.com/in/sebastianoctavio17/',
+      icon: SiLinkedin,
+      text: 'Linkedin',
+    }
+  ];
