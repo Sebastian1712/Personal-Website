@@ -17,6 +17,10 @@ const TitleDiv = styled.div`
 const Intro = styled.h1`
   font-size: 40px;
   transition: all .5s ease;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 1.8em;
+  }
 `
 
 const TitleParagraph = styled.p`
@@ -25,6 +29,15 @@ const TitleParagraph = styled.p`
     line-height: 120%;
     margin-top: -1%;
     transition: all .5s ease;
+    text-align: center;
+    width: 52%;
+
+    @media only screen and (max-width: 500px) {
+    font-size: 1.2em;
+    display: inline-block;
+    width: 85%;
+  }
+
 `
 
 const TitleLine = styled.div`
@@ -33,9 +46,12 @@ const TitleLine = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    background: #7736FF;
-    width: 600px;
+    width: 50%;
     transition: all .5s ease;
+
+    @media only screen and (max-width: 500px) {
+      width: 80%;
+    }
 `
 
 const CircleFrame = styled.div`
@@ -47,6 +63,12 @@ const CircleFrame = styled.div`
     background-size: 100px;
     background-position: center;
     transition: all .5s ease;
+
+    @media only screen and (max-width: 500px) {
+      width: 104px;
+      height: 104px;
+      background-size: 90px;
+    }
 `
 
 function Title() {
@@ -55,7 +77,7 @@ function Title() {
           <CircleFrame className="circleFrame"/>
           <Intro>Hi, I'm Sebastián!</Intro>
           <TitleParagraph>
-            I’m a knowledge seeker who loves computer science 💻,<br></br>
+            I’m a knowledge seeker who loves computer science 💻,
             music 🎹, philosophy 💭, nature 🍃, and much more ⚽️! 
           </TitleParagraph>
           <TitleLine className="titleLine"/>
