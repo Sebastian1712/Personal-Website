@@ -16,6 +16,12 @@ const IconsDiv = styled.div`
     width: 100%;
     height: 50px;
     margin-top: 14%;
+    @media only screen and (max-width: 500px) {
+        position: absolute;
+        justify-content: center;
+        bottom: 0px;
+        padding-bottom: 1%;
+    }
 `;
 
 const IconLinks = styled.a`
