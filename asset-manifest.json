@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.81a6fb55.chunk.css",
-    "main.js": "/static/js/main.dd898f95.chunk.js",
-    "main.js.map": "/static/js/main.dd898f95.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.80963a70.js",
-    "runtime-main.js.map": "/static/js/runtime-main.80963a70.js.map",
-    "static/js/2.632f52ea.chunk.js": "/static/js/2.632f52ea.chunk.js",
-    "static/js/2.632f52ea.chunk.js.map": "/static/js/2.632f52ea.chunk.js.map",
-    "static/js/3.0cd15631.chunk.js": "/static/js/3.0cd15631.chunk.js",
-    "static/js/3.0cd15631.chunk.js.map": "/static/js/3.0cd15631.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.81a6fb55.chunk.css.map": "/static/css/main.81a6fb55.chunk.css.map",
-    "static/js/2.632f52ea.chunk.js.LICENSE.txt": "/static/js/2.632f52ea.chunk.js.LICENSE.txt",
-    "static/media/sebastianIcon.e69ac8e9.png": "/static/media/sebastianIcon.e69ac8e9.png"
+    "main.css": "/Personal-Website/static/css/main.81a6fb55.chunk.css",
+    "main.js": "/Personal-Website/static/js/main.e13e8cbf.chunk.js",
+    "main.js.map": "/Personal-Website/static/js/main.e13e8cbf.chunk.js.map",
+    "runtime-main.js": "/Personal-Website/static/js/runtime-main.36c20394.js",
+    "runtime-main.js.map": "/Personal-Website/static/js/runtime-main.36c20394.js.map",
+    "static/js/2.d6f3d724.chunk.js": "/Personal-Website/static/js/2.d6f3d724.chunk.js",
+    "static/js/2.d6f3d724.chunk.js.map": "/Personal-Website/static/js/2.d6f3d724.chunk.js.map",
+    "static/js/3.0cd15631.chunk.js": "/Personal-Website/static/js/3.0cd15631.chunk.js",
+    "static/js/3.0cd15631.chunk.js.map": "/Personal-Website/static/js/3.0cd15631.chunk.js.map",
+    "index.html": "/Personal-Website/index.html",
+    "static/css/main.81a6fb55.chunk.css.map": "/Personal-Website/static/css/main.81a6fb55.chunk.css.map",
+    "static/js/2.d6f3d724.chunk.js.LICENSE.txt": "/Personal-Website/static/js/2.d6f3d724.chunk.js.LICENSE.txt",
+    "static/media/sebastianIcon.e69ac8e9.png": "/Personal-Website/static/media/sebastianIcon.e69ac8e9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.80963a70.js",
-    "static/js/2.632f52ea.chunk.js",
+    "static/js/runtime-main.36c20394.js",
+    "static/js/2.d6f3d724.chunk.js",
     "static/css/main.81a6fb55.chunk.css",
-    "static/js/main.dd898f95.chunk.js"
+    "static/js/main.e13e8cbf.chunk.js"
   ]
 }
