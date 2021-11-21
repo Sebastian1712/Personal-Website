@@ -15,13 +15,11 @@ const TitleDiv = styled.div`
 `
 
 const Intro = styled.h1`
-  color: #fff;
   font-size: 40px;
 `
 
 const TitleParagraph = styled.p`
     display: flex;
-    color: #fff;
     font-size: 1.438em;
     line-height: 120%;
     margin-top: -1%;
@@ -41,7 +39,6 @@ const CircleFrame = styled.div`
     align-content: center;
     width: 114px;
     height: 114px;
-    background: #7736FF;
     border-radius: 50%;
     background-image: url(${memoji});
     background-size: 100px;
@@ -51,13 +48,13 @@ const CircleFrame = styled.div`
 function Title() {
     return (
         <TitleDiv>
-          <CircleFrame/>
+          <CircleFrame className="circleFrame"/>
           <Intro>Hi, I'm Sebastián!</Intro>
           <TitleParagraph>
             I’m a knowledge seeker who loves computer science 💻,<br></br>
             music 🎹, philosophy 💭, nature 🍃, and much more ⚽️! 
           </TitleParagraph>
-          <TitleLine/>
+          <TitleLine className="titleLine"/>
         </TitleDiv>
     );
   }

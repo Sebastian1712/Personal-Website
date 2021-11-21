@@ -6,14 +6,14 @@ const NavBar = () => {
         <>
             <Nav>
                 <Bars/>
-                <NavMenu>
-                    <NavLink to="/" activestyle>
+                <NavMenu className="navMenu">
+                    <NavLink to="/" activestyle className="navLink">
                         Home
                     </NavLink>
-                    <NavLink to="/experiences" activestyle>
+                    <NavLink to="/experiences" activestyle className="navLink">
                         Experiences
                     </NavLink>
-                    <NavLink to="/self" activestyle>
+                    <NavLink to="/self" activestyle className="navLink">
                         Self
                     </NavLink>
                 </NavMenu>
