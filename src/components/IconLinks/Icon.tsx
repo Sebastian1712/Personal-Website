@@ -9,7 +9,6 @@ import './Icons.css';
 
 
 const IconsDiv = styled.div`
-    /* background-color: #fff; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -21,15 +20,7 @@ const IconsDiv = styled.div`
 
 const IconLinks = styled.a`
     padding-right: 1.5%;
-`
-
-const IconImage = styled.img`
-    width: 30px;
-    height: 30px;
-    padding-right: 5%;
-    ${IconLinks}:hover & {
-    fill: #7736FF;
-  }
+    transition: all .5s ease;
 `;
 
 function Icons() {

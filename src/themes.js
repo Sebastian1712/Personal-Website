@@ -29,10 +29,21 @@ export const GlobalStyles = createGlobalStyle `
 
     .iconProvider {
         color: ${(props) => props.theme.iconColor};
+        transition: all .5s ease;
     }
 
     .icon:hover {
         fill: ${(props) => props.theme.purpleColor};
+        transition: all .5s ease;
+    }
+
+    .themeIcons {
+        fill: ${(props) => props.theme.fontColor};
+    }
+
+    .themeIcons:hover {
+        fill: ${(props) => props.theme.purpleColor};
+        transition: all .5s ease;
     }
 
     .navLink {

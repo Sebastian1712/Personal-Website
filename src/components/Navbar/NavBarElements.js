@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { NavLink as Link} from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
+
 // rgb(12, 11, 11)
 export const Nav = styled.nav`
     height: 80px;
@@ -16,6 +17,7 @@ export const NavLink = styled(Link) `
     text-decoration: none;
     padding: 0 2rem 0;
     cursor: pointer;
+    transition: all .5s ease;
 `
 
 export const Bars = styled(FaBars) `

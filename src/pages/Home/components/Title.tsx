@@ -16,6 +16,7 @@ const TitleDiv = styled.div`
 
 const Intro = styled.h1`
   font-size: 40px;
+  transition: all .5s ease;
 `
 
 const TitleParagraph = styled.p`
@@ -23,6 +24,7 @@ const TitleParagraph = styled.p`
     font-size: 1.438em;
     line-height: 120%;
     margin-top: -1%;
+    transition: all .5s ease;
 `
 
 const TitleLine = styled.div`
@@ -33,6 +35,7 @@ const TitleLine = styled.div`
     margin-top: auto;
     background: #7736FF;
     width: 600px;
+    transition: all .5s ease;
 `
 
 const CircleFrame = styled.div`
@@ -43,6 +46,7 @@ const CircleFrame = styled.div`
     background-image: url(${memoji});
     background-size: 100px;
     background-position: center;
+    transition: all .5s ease;
 `
 
 function Title() {
