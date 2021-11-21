@@ -32,7 +32,7 @@ function NavBar(props){
             <Nav>
                 <Bars/>
                 <NavMenu className="navMenu">
-                    <NavLink to="/" activestyle className="navLink">
+                    <NavLink to="/Personal-Website" activestyle className="navLink">
                         Home
                     </NavLink>
                     <NavLink to="/experiences" activestyle className="navLink">
