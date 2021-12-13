@@ -10,7 +10,6 @@ import Experiences from './pages/Experiences/Experiences';
 import Recommendations from './pages/Recommendations/Recommendations';
 import styled, { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from './themes.js';
-import { BsSun } from "react-icons/bs";
 
 const StyledApp = styled.div`
     color: ${props => props.theme.fontColor};
@@ -26,7 +25,6 @@ function App() {
             <GlobalStyles/>
             <StyledApp>
                 <NavBar theme={theme} setTheme={setTheme}/>
-                {/* <BsSun size="30" className=""></BsSun> */}
                 <Route path="/Personal-Website" exact component = {Home} />
                 <Route path="/self" exact component = {Self} />
                 <Route path="/experiences" exact component = {Experiences} />

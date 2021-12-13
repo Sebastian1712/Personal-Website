@@ -1,0 +1,28 @@
+.mainNavigation {
+    margin: 2rem;
+}
+
+.navigationList {
+    list-style-type: none;
+}
+
+.primary-header {
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 4rem);
+}
+
+.themeButton {
+    /* margin: 2rem; */
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 95%;
+    cursor: pointer;
+}

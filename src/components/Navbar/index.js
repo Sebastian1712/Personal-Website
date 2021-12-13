@@ -3,6 +3,7 @@ import { Nav, NavLink, Bars, NavMenu, NavBtn, MainNavLink, ThemeButton } from '.
 import { BsSun } from "react-icons/bs";
 import { BsMoonStars } from "react-icons/bs";
 import styled from 'styled-components'
+import './navigation.css'
 
 
 const Toggle = styled.button`
@@ -15,7 +16,7 @@ const Toggle = styled.button`
     padding-right: 1%;
 `;
 
-function NavBar(props){
+function NavBar(props) {
 
     function toggleTheme() {
         if (props.theme === "light") {
@@ -28,7 +29,7 @@ function NavBar(props){
     const icon = props.theme === "light" ? <BsMoonStars size="30" className="themeIcons"/> : <BsSun size="30" className="themeIcons"/>;
 
     return (
-        <>
+        <header className="primary-header flex">
             <Nav>
                 <Bars/>
                 <NavMenu className="navMenu">
@@ -46,7 +47,7 @@ function NavBar(props){
                     </Toggle>
                 </NavMenu>
             </Nav>
-        </>
+        </header>
     )
 }
 

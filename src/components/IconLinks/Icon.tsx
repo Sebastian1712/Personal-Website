@@ -50,16 +50,3 @@ function Icons() {
 }
 
 export default Icons;
-
-const socials = [
-    {
-      href: 'https://github.com/Sebastian1712',
-      icon: SiGithub,
-      text: 'Github',
-    },
-    {
-      href: 'https://www.linkedin.com/in/sebastianoctavio17/',
-      icon: SiLinkedin,
-      text: 'Linkedin',
-    }
-  ];
