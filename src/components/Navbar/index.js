@@ -14,6 +14,9 @@ const Toggle = styled.button`
     transition: all .5s ease;
     right: 0px;
     padding-right: 1%;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 function NavBar(props) {
@@ -31,7 +34,6 @@ function NavBar(props) {
     return (
         <header className="primary-header flex">
             <Nav>
-                <Bars/>
                 <NavMenu className="navMenu">
                     <NavLink to="/Personal-Website" activestyle className="navLink">
                         Home

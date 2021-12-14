@@ -38,7 +38,7 @@ export const NavMenu = styled.div `
     align-items: center;
     margin-right: -24px;
     @media screen and (max-width: 758px) {
-        display: none;
+        font-size: small
     }
 `
 export const NavBtn = styled.nav `
