@@ -13,7 +13,7 @@ import { lightTheme, darkTheme, GlobalStyles } from './themes.js';
 
 const StyledApp = styled.div`
     color: ${props => props.theme.fontColor};
-`
+`;
 
 function App() {
 

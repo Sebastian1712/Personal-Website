@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction, useEffect } from 'react';
 import './Title.css';
 import memoji from '../../../public/sebastianIcon.png'
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+import { fadeInDown } from 'react-animations';
+
+const fadeInDownAnimation =  keyframes`${fadeInDown}`;
 
 const TitleDiv = styled.div`
   display: flex;
@@ -12,6 +15,7 @@ const TitleDiv = styled.div`
   align-items: center;
   align-content: center;
   margin-top: 10%;
+  animation: ${props => (props.defaultValue == "true") ? css`${fadeInDownAnimation} .8s` : ""};
 `
 
 const Intro = styled.h1`
@@ -71,9 +75,20 @@ const CircleFrame = styled.div`
     }
 `
 
-function Title() {
+function Title(props: { animate: string, setAnimation: Dispatch<SetStateAction<string>> }) {
+
+  useEffect(() => {
+   if (window.sessionStorage.getItem("firstLoad") === null) {
+      window.sessionStorage.setItem("firstLoad", "1");
+    }
+
+    else if (window.sessionStorage.getItem("firstLoad") == "1") {
+      props.setAnimation("false");
+    }
+  });
+
     return (
-        <TitleDiv>
+        <TitleDiv defaultValue={props.animate} >
           <CircleFrame className="circleFrame"/>
           <Intro>Hi, I'm Sebastián!</Intro>
           <TitleParagraph>
