@@ -1,8 +1,9 @@
-name: Build and Deploy
+name: Build and Deploy\
+
 on:
   push:
     branches:
-      - main
+      - "main"
     paths:
       - 'src/**'
       - '.github/workflows/**'
