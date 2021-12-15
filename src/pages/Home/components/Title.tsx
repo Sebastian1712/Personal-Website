@@ -79,10 +79,12 @@ function Title(props: { animate: string, setAnimation: Dispatch<SetStateAction<s
 
   useEffect(() => {
    if (window.sessionStorage.getItem("firstLoad") === null) {
+      console.log("Inside of first load");
       window.sessionStorage.setItem("firstLoad", "1");
     }
 
     else if (window.sessionStorage.getItem("firstLoad") == "1") {
+      console.log("Inside of second load");
       props.setAnimation("false");
     }
   });

@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Title from './components/Title';
 import MusicAnimation from '../../components/MusicAnimation';
 import Icons from '../../components/IconLinks/Icon';
 
 function Home() {
-  const [animate, setAnimation] = useState("true");
-
+    const [animate, setAnimation] = useState("true");
+    useEffect(() => {
+      document.title = "Sebastian Hernandez"
+    }, []);
+    
     return (
       <div className="homeDiv">
         <Title animate={animate} setAnimation={setAnimation}/>

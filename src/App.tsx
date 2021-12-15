@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import Home from './pages/Home/Home';
 import MusicAnimation from './components/MusicAnimation';
@@ -16,6 +16,10 @@ const StyledApp = styled.div`
 `;
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Sebastian Hernandez"
+  }, []);
 
   const [theme, setTheme] = useState("dark");
 
