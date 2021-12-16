@@ -2,6 +2,8 @@ import React, { Dispatch, SetStateAction, useEffect } from 'react';
 import './Title.css';
 import styled, { css, keyframes } from 'styled-components';
 import { fadeInDown } from 'react-animations';
+import memoji from '../../../public/sebastianIcon.png'
+
 
 const fadeInDownAnimation =  keyframes`${fadeInDown}`;
 
