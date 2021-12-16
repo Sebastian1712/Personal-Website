@@ -38,6 +38,7 @@ export const GlobalStyles = createGlobalStyle `
 
     .iconProvider {
         color: ${(props) => props.theme.iconColor};
+        transition: all .5s ease;
     }
 
     .icon:hover {
