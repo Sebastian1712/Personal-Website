@@ -1,7 +1,4 @@
 import React from 'react'
-import githubIcon from '../../public/GitHub-Mark-Light-120px-plus.png'
-import linkedInIcon from '../../public/linkedInIcon.png'
-import mailIcon from '../../public/whiteMailIcon.png'
 import styled from 'styled-components'
 import { SiGithub, SiLinkedin, SiGmail } from 'react-icons/si';
 import { IconContext } from "react-icons";

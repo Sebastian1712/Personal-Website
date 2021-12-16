@@ -7,7 +7,6 @@
 }
 
 .primary-header {
-    /* background-color: red; */
     align-items: center;
     justify-content: center;
     margin: 1rem;
@@ -15,7 +14,10 @@
 
 .flex {
     display: flex;
-    gap: var(--gap, 4rem);
+    justify-content: flex-start;
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
 }
 
 .themeButton {

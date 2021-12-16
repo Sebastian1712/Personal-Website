@@ -1,16 +1,17 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle, css } from "styled-components"
+import memoji from './public/sebastianIcon.png'
 
 export const lightTheme = {
     body: "#F7F2EC",
     fontColor: "#000",
-    purpleColor: "#DBC6FF",
+    purpleColor: "light",
     iconColor: "#000"
 }
 
 export const darkTheme = {
     body: "#0C0B0B",
     fontColor: "#fff",
-    purpleColor: "#7736FF",
+    purpleColor: "dark",
     iconColor: "#fff"
 }
 
@@ -20,11 +21,15 @@ export const GlobalStyles = createGlobalStyle `
     }
 
     .circleFrame {
-        background-color: ${(props) => props.theme.purpleColor};
+        ${(props) => (props.theme.purpleColor !== "light") ? css`background-image: url(${memoji}), 
+        linear-gradient(180deg, #08C8F6 0%, rgba(124, 136, 255, .6) 100%);` : css`background-image: url(${memoji}),
+        linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%);`};
     }
 
     .titleLine {
-        background-color: ${(props) => props.theme.purpleColor};
+        ${(props) => (props.theme.purpleColor !== "light") ? css`background-image: url(${memoji}), 
+        linear-gradient(180deg, #08C8F6 0%, rgba(124, 136, 255, .6) 100%);` : css`background-image: url(${memoji}),
+        linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%);`};
     }
 
     .iconProvider {
@@ -33,31 +38,77 @@ export const GlobalStyles = createGlobalStyle `
     }
 
     .icon:hover {
-        fill: ${(props) => props.theme.purpleColor};
-        transition: all .5s ease;
+        ${(props) => {
+            switch (props.theme.purpleColor) {
+                case "dark":
+                    return css`
+                        fill: #08C8F6;
+                    `;
+                default:
+                    return css`
+                        fill: #DBC6FF;
+                    `;
+            }
+        }}
     }
 
     .themeIcons {
         fill: ${(props) => props.theme.fontColor};
+        transition: all .5s ease;
     }
 
     .themeIcons:hover {
-        fill: ${(props) => props.theme.purpleColor};
-        transition: all .5s ease;
+        ${(props) => {
+            switch (props.theme.purpleColor) {
+                case "dark":
+                    return css`
+                        fill: #08C8F6;
+                    `;
+                default:
+                    return css`
+                        fill: #DBC6FF;
+                    `;
+            }
+        }}
     }
 
     .navLink {
         color: ${(props) => props.theme.fontColor};
-
+        transition: all .5s ease;
+        &:hover {
+            ${(props) => {
+                    switch (props.theme.purpleColor) {
+                        case "dark":
+                            return css`
+                                color: #08C8F6;
+                            `;
+                        default:
+                            return css`
+                                color: #DBC6FF;
+                            `;
+                    }
+                }}
+        }
         /* Fade in */
-        &::after {
+        /* &::after {
                 top: 23px;
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 width: 100%;
                 height: 0.2em;
-                background-color: ${(props) => props.theme.purpleColor};
+                ${(props) => {
+                    switch (props.theme.purpleColor) {
+                        case "dark":
+                            return css`
+                                background: linear-gradient(180deg, #08C8F6 0%, rgba(124, 136, 255, .6) 100%);
+                            `;
+                        default:
+                            return css`
+                                background: linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%);
+                            `;
+                    }
+                }}
                 opacity: 0;
                 transition: opacity 300ms, transform 300ms;
         }
@@ -74,6 +125,7 @@ export const GlobalStyles = createGlobalStyle `
         &:hover::after,
         &:focus::after {
             transform: scaleX(.55);
-        }
+
+        } */
     }
 `;
