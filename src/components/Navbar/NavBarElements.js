@@ -2,12 +2,10 @@ import styled from 'styled-components'
 import { NavLink as Link} from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 
-// rgb(12, 11, 11)
 export const Nav = styled.nav`
     height: 80px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     z-index: 10;
 `
 
@@ -16,8 +14,9 @@ export const NavLink = styled(Link) `
     display: inline-block;
     text-decoration: none;
     padding: 0 2rem 0;
+    font-style: normal;
+    font-weight: 800;
     cursor: pointer;
-    transition: all .5s ease;
 `
 
 export const Bars = styled(FaBars) `

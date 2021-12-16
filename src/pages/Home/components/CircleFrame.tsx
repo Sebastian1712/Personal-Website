@@ -8,7 +8,6 @@ const CircleFrame = styled.div`
     align-content: center;
     width: 114px;
     height: 114px;
-    background: #7736FF;
     border-radius: 50%;
 `
 

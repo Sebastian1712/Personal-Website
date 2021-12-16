@@ -1,6 +1,5 @@
 import React, { Dispatch, SetStateAction, useEffect } from 'react';
 import './Title.css';
-import memoji from '../../../public/sebastianIcon.png'
 import styled, { css, keyframes } from 'styled-components';
 import { fadeInDown } from 'react-animations';
 
@@ -15,13 +14,13 @@ const TitleDiv = styled.div`
   align-items: center;
   align-content: center;
   margin-top: 10%;
-  animation: ${props => (props.defaultValue == "true") ? css`${fadeInDownAnimation} .8s` : ""};
+  animation: ${props => (props.defaultValue === "true") ? css`${fadeInDownAnimation} .8s` : ""};
 `
 
 const Intro = styled.h1`
   font-size: 40px;
   transition: all .5s ease;
-
+  font-weight: 800;
   @media only screen and (max-width: 500px) {
     font-size: 1.8em;
   }
@@ -45,13 +44,14 @@ const TitleParagraph = styled.p`
 `
 
 const TitleLine = styled.div`
-    height: 3px;
+    height: 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     width: 50%;
     transition: all .5s ease;
+    border-width: thick;
 
     @media only screen and (max-width: 500px) {
       width: 80%;
@@ -63,10 +63,10 @@ const CircleFrame = styled.div`
     width: 114px;
     height: 114px;
     border-radius: 50%;
-    background-image: url(${memoji});
     background-size: 100px;
     background-position: center;
     transition: all .5s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media only screen and (max-width: 500px) {
       width: 104px;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavLink, Bars, NavMenu, NavBtn, MainNavLink, ThemeButton } from './NavBarElements'
+import { Nav, NavLink, NavMenu } from './NavBarElements'
 import { BsSun } from "react-icons/bs";
 import { BsMoonStars } from "react-icons/bs";
 import styled from 'styled-components'
