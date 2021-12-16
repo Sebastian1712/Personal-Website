@@ -2,7 +2,6 @@ import React, { Dispatch, SetStateAction, useEffect } from 'react';
 import './Title.css';
 import styled, { css, keyframes } from 'styled-components';
 import { fadeInDown } from 'react-animations';
-import memoji from '../../../public/sebastianIcon.png'
 
 
 const fadeInDownAnimation =  keyframes`${fadeInDown}`;
@@ -85,7 +84,7 @@ function Title(props: { animate: string, setAnimation: Dispatch<SetStateAction<s
       window.sessionStorage.setItem("firstLoad", "1");
     }
 
-    else if (window.sessionStorage.getItem("firstLoad") == "1") {
+    else if (window.sessionStorage.getItem("firstLoad") === "1") {
       console.log("Inside of second load");
       props.setAnimation("false");
     }

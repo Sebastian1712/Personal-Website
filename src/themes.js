@@ -5,14 +5,16 @@ export const lightTheme = {
     body: "#F7F2EC",
     fontColor: "#000",
     purpleColor: "light",
-    iconColor: "#000"
+    iconColor: "#000",
+    blueColor: "#DBC6FF"
 }
 
 export const darkTheme = {
     body: "#0C0B0B",
     fontColor: "#fff",
     purpleColor: "dark",
-    iconColor: "#fff"
+    iconColor: "#fff",
+    blueColor: "#08C8F6"
 }
 
 export const GlobalStyles = createGlobalStyle `
@@ -94,43 +96,24 @@ export const GlobalStyles = createGlobalStyle `
                     }
                 }}
         }
-        /* Fade in */
-        /* &::after {
-                top: 23px;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 0.2em;
-                ${(props) => {
+    }
+
+    .navLink-active {
+        color: ${(props) => props.theme.blueColor};
+        transition: all .5s ease;
+        &:hover {
+            ${(props) => {
                     switch (props.theme.purpleColor) {
                         case "dark":
                             return css`
-                                background: linear-gradient(180deg, #08C8F6 0%, rgba(124, 136, 255, .6) 100%);
+                                color: #08C8F6;
                             `;
                         default:
                             return css`
-                                background: linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%);
+                                color: #DBC6FF;
                             `;
                     }
                 }}
-                opacity: 0;
-                transition: opacity 300ms, transform 300ms;
         }
-
-        &:after {
-            content: '';
-            opacity: 1;
-            transform: scaleX(0);
-            bottom: 0;
-            left: 0;
-            transform-origin: center;
-        }
-
-        &:hover::after,
-        &:focus::after {
-            transform: scaleX(.55);
-
-        } */
     }
 `;

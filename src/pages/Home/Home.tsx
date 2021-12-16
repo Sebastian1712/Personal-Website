@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Title from './components/Title';
-import MusicAnimation from '../../components/MusicAnimation';
 import Icons from '../../components/IconLinks/Icon';
 
 function Home() {

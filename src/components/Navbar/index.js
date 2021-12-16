@@ -3,8 +3,7 @@ import { Nav, NavLink, NavMenu } from './NavBarElements'
 import { BsSun } from "react-icons/bs";
 import { BsMoonStars } from "react-icons/bs";
 import styled from 'styled-components'
-import './navigation.css'
-
+import  './navigation.css'
 
 const Toggle = styled.button`
     position: absolute;
@@ -35,13 +34,13 @@ function NavBar(props) {
         <header className="primary-header flex">
             <Nav>
                 <NavMenu className="navMenu">
-                    <NavLink to="/Personal-Website" activestyle className="navLink">
+                    <NavLink to="/Personal-Website" activeClassName='navLink-active' className="navLink">
                         Home
                     </NavLink>
-                    <NavLink to="/experiences" activestyle className="navLink">
+                    <NavLink to="/experiences" activeClassName='navLink-active' className="navLink">
                         Experiences
                     </NavLink>
-                    <NavLink to="/self" activestyle className="navLink">
+                    <NavLink to="/self" activeClassName='navLink-active' className="navLink">
                         Self
                     </NavLink>
                     <Toggle onClick={toggleTheme}>
