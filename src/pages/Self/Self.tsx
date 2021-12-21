@@ -1,19 +1,26 @@
+import { motion } from 'framer-motion';
 import React, { useEffect } from 'react';
-import MusicAnimation from '../../components/MusicAnimation';
+import { pageTransitions, transitionSettings } from '../../components/Transitions';
 import './Self.css';
 
 function Self() {
 
-  useEffect(() => {
-    document.title = "Sebastian | Self"
-  }, []);
+    useEffect(() => {
+      document.title = "Sebastian | Self"
+    }, []);
 
     return (
-      <div className="selfDiv">
+      <motion.div 
+      className="selfDiv" 
+      initial="initial" 
+      animate="visible" 
+      exit="hidden" 
+      variants={pageTransitions}
+      transition={transitionSettings}>
           <h1>
             🛠💻 Self page under development 🛠💻
           </h1>
-      </div>
+      </motion.div>
     );
   }
   

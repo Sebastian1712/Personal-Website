@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
-import Home from './pages/Home/Home';
-import MusicAnimation from './components/MusicAnimation';
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
-import NavBar from './components/Navbar';
-import Self from './pages/Self/Self';
-import Experiences from './pages/Experiences/Experiences';
-import Recommendations from './pages/Recommendations/Recommendations';
+import React, { useEffect, useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from './themes.js';
+import { AnimatePresence } from 'framer-motion';
+import { Route, Switch, useLocation } from 'react-router-dom';
+import NavBar from './components/Navbar';
+import Home from './pages/Home/Home';
+import Experiences from './pages/Experiences/Experiences';
+import Self from './pages/Self/Self';
 
 const StyledApp = styled.div`
     color: ${props => props.theme.fontColor};
 `;
 
 function App() {
+  const location = useLocation();
 
   useEffect(() => {
     document.title = "Sebastian Hernandez"
@@ -24,18 +23,19 @@ function App() {
   const [theme, setTheme] = useState("dark");
 
   return (
-        <BrowserRouter>
           <ThemeProvider theme={theme==="light" ? lightTheme : darkTheme}>
             <GlobalStyles/>
             <StyledApp>
                 <NavBar theme={theme} setTheme={setTheme}/>
-                <Route path="/Personal-Website" exact component = {Home} />
-                <Route path="/self" exact component = {Self} />
-                <Route path="/experiences" exact component = {Experiences} />
-                <Route path="/recommendations" exact component = {Recommendations} />
-            </StyledApp>
+                <AnimatePresence exitBeforeEnter>
+                  <Switch location={location} key={location.pathname}>
+                    <Route path="/Personal-Website" exact component = {Home} />
+                    <Route path="/self" exact component = {Self} />
+                    <Route path="/experiences" exact component = {Experiences} />
+                  </Switch>
+                </AnimatePresence>
+              </StyledApp>
             </ThemeProvider>
-        </BrowserRouter>
   );
 }
 

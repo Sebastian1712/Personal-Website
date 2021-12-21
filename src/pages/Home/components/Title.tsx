@@ -3,7 +3,6 @@ import './Title.css';
 import styled, { css, keyframes } from 'styled-components';
 import { fadeInDown } from 'react-animations';
 
-
 const fadeInDownAnimation =  keyframes`${fadeInDown}`;
 
 const TitleDiv = styled.div`
