@@ -9,7 +9,7 @@ export const pageTransitions = {
     },
     hidden: {
         opacity: 0,
-        y: "-100vh"
+        y: "-8vh"
     }
 };
 
