@@ -27,7 +27,7 @@ function App() {
             <GlobalStyles/>
             <StyledApp>
                 <NavBar theme={theme} setTheme={setTheme}/>
-                <AnimatePresence exitBeforeEnter>
+                <AnimatePresence exitBeforeEnter initial={false}>
                   <Switch location={location} key={location.pathname}>
                     <Route path="/Personal-Website" exact component = {Home} />
                     <Route path="/self" exact component = {Self} />
