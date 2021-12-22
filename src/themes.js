@@ -24,9 +24,9 @@ export const GlobalStyles = createGlobalStyle `
     .circleFrame {
         ${(props) => (props.theme.purpleColor !== "light") ? 
         css`content:  url(${memoji});
-            background: linear-gradient(180deg, #08C8F6 0%, rgba(8,200,246,1) 0%, rgba(124,136,255,0.72) 100%) no-repeat;
+            background: linear-gradient(180deg, #08C8F6 0%, rgba(8,200,246,1) 0%, rgba(124,136,255,0.72) 100%);
             image-rendering: url(${memoji});` 
-        : css`background: linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%) no-repeat;
+        : css`background: linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%);
             image-rendering: url(${memoji});
             content: url(${memoji});`};
     }

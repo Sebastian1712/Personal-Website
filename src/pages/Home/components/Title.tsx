@@ -63,7 +63,7 @@ const CircleFrame = styled.div`
     width: 114px;
     height: 114px;
     border-radius: 50%;
-    background-size: 100px;
+    background-size: 100%;
     background-position: center;
     transition: all .5s ease;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
