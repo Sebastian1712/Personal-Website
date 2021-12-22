@@ -1,6 +1,4 @@
-import React from 'react';
 import styled from 'styled-components';
-import memoji from '../../../public/sebastianIcon.png'
 
 const CircleFrame = styled.div`
     position: flex;
