@@ -71,7 +71,7 @@ const CircleFrame = styled.div`
     @media only screen and (max-width: 500px) {
       width: 104px;
       height: 104px;
-      background-size: 90px;
+      background-size: 100%;
     }
 `
 
