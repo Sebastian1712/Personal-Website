@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import MusicAnimation from '../../components/MusicAnimation';
+import { motion } from 'framer-motion';
+import { pageTransitions, transitionSettings } from '../../components/Transitions';
 import './Experiences.css';
 
 function Experiences() {
@@ -9,11 +10,17 @@ function Experiences() {
     }, []);
 
     return (
-      <div className="experiencesDiv">
+      <motion.div 
+      className="experiencesDiv" 
+      initial="initial"
+      animate="visible" 
+      exit="hidden"
+      variants={pageTransitions}
+      transition={transitionSettings}>
           <h1>
             🛠💻 Experiences page under development 🛠💻
           </h1>
-      </div>
+      </motion.div>
     );
   }
   
