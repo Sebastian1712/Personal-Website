@@ -12,6 +12,7 @@ function Home() {
     }, []);
     
     return (
+    <>
       <motion.div 
       className="homeDiv" 
       initial="initial" 
@@ -21,9 +22,10 @@ function Home() {
       transition={transitionSettings}>
 
         <Title animate={animate} setAnimation={setAnimation}/>
-        <Icons></Icons>
       
       </motion.div>
+      <Icons></Icons>
+    </>
     );
   }
   
