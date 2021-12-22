@@ -21,23 +21,24 @@ export const GlobalStyles = createGlobalStyle `
     body {
         background-color: ${(props) => props.theme.body};
     }
-
     .circleFrame {
-        background: linear-gradient(180deg, #08C8F6 0%, rgba(124, 136, 255, 0.72) 100%);
-        background: linear-gradient(180deg, #08C8F6 0%, rgba(124, 136, 255, 0.72) 100%); 
+        ${(props) => (props.theme.purpleColor !== "light") ? 
+        css`background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(8,200,246,1) 0%, rgba(124,136,255,0.72) 100%);
+            image-rendering: url(${memoji});
+            content: url(${memoji});` 
+        : css`background: linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%);
+            image-rendering: url(${memoji});
+            content: url(${memoji});`};
     }
-
     .titleLine {
         ${(props) => (props.theme.purpleColor !== "light") ? css`background-image: url(${memoji}), 
         linear-gradient(180deg, #08C8F6 0%, rgba(124, 136, 255, .6) 100%);` : css`background-image: url(${memoji}),
         linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%);`};
     }
-
     .iconProvider {
         color: ${(props) => props.theme.iconColor};
         transition: all .5s ease;
     }
-
     .icon:hover {
         ${(props) => {
             switch (props.theme.purpleColor) {
@@ -52,12 +53,10 @@ export const GlobalStyles = createGlobalStyle `
             }
         }}
     }
-
     .themeIcons {
         fill: ${(props) => props.theme.fontColor};
         transition: all .5s ease;
     }
-
     .themeIcons:hover {
         ${(props) => {
             switch (props.theme.purpleColor) {
@@ -73,7 +72,6 @@ export const GlobalStyles = createGlobalStyle `
         }}
         transition: all .5s ease;
     }
-
     .navLink {
         color: ${(props) => props.theme.fontColor};
         transition: all .5s ease;
@@ -92,7 +90,6 @@ export const GlobalStyles = createGlobalStyle `
                 }}
         }
     }
-
     .navLink-active {
         color: ${(props) => props.theme.blueColor};
         transition: all .5s ease;
