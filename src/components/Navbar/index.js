@@ -34,13 +34,13 @@ function NavBar(props) {
         <header className="primary-header flex">
             <Nav>
                 <NavMenu className="navMenu">
-                    <NavLink to="/Personal-Website" activeClassName='navLink-active' className="navLink">
+                    <NavLink to="/Personal-Website" className={({ isActive }) => (isActive ? "navLink-active" : "navLink")}>
                         Home
                     </NavLink>
-                    <NavLink to="/experiences" activeClassName='navLink-active' className="navLink">
+                    <NavLink to="/experiences" className={({ isActive }) => (isActive ? "navLink-active" : "navLink")}>
                         Experiences
                     </NavLink>
-                    <NavLink to="/self" activeClassName='navLink-active' className="navLink">
+                    <NavLink to="/self" className={({ isActive }) => (isActive ? "navLink-active" : "navLink")}>
                         Self
                     </NavLink>
                     <Toggle onClick={toggleTheme}>

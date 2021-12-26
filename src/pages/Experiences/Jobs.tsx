@@ -7,6 +7,8 @@ import microsoftLogo from '../../public/microsoftIcon.png';
 import intelLogo from '../../public/newIntelIcon.png';
 import { FrameConfigurations } from '../../components/Frame/FrameConfigurations';
 import { FrameArtifacts } from '../../components/Frame/FrameArtifacts';
+import { Route, Routes } from 'react-router-dom';
+import { Outlet } from 'react-router';
 
 const experienceOne: FrameConfigurations & FrameArtifacts = {
   width: 300,
@@ -64,6 +66,7 @@ function Jobs() {
         <Frame 
           {...experienceThree}
         ></Frame>
+        <Outlet/>
       </motion.div>
     );
   }

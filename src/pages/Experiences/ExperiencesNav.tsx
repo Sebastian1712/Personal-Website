@@ -32,10 +32,10 @@ const ExperiencesNav = () => {
     return(
         <div>
             <StyledExperiencesNav>
-                <StyledExperiencesLink to='/experiences' exact activeClassName="activeExperiencesLink" className='experiencesLink'>
+                <StyledExperiencesLink to='/experiences' className={({ isActive }) => (isActive ? "activeExperiencesLink" : "experiencesLink")}>
                     Jobs
                 </StyledExperiencesLink>
-                <StyledExperiencesLink to='/experiences/projects' exact activeClassName="activeExperiencesLink" className='experiencesLink'>
+                <StyledExperiencesLink to='/experiences/projects' className={({ isActive }) => (isActive ? "activeExperiencesLink" : "experiencesLink")}>
                     Projects
                 </StyledExperiencesLink>
             </StyledExperiencesNav>

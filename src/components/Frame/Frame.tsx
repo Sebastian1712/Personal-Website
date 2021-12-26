@@ -2,8 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { FrameConfigurations } from './FrameConfigurations';
 import { FrameArtifacts } from './FrameArtifacts';
+import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-const StyledLinkFrame = styled.a`
+const StyledLinkFrame = styled(NavLink)`
     display: contents;
 `;
 
@@ -42,9 +44,10 @@ const StyledFrame = styled.div<FrameConfigurations & FrameArtifacts>`
 `;
 
 const Frame = ({ width, height, strokeSize, color, icon, title, description }: FrameConfigurations & FrameArtifacts) => {
+    const history = useNavigate();
 
     return (
-        <StyledLinkFrame href='/experiences/newComponent' className="styledFrameLink">
+        <StyledLinkFrame to='/experiences/one' className="styledFrameLink">
             <StyledFrame className='styleFrame' 
             width={width}
             height={height}
