@@ -28,10 +28,10 @@ function App() {
             <StyledApp>
                 <NavBar theme={theme} setTheme={setTheme}/>
                 <AnimatePresence exitBeforeEnter initial={false}>
-                  <Switch location={location} key={location.pathname}>
-                    <Route path="/Personal-Website" exact component = {Home} />
-                    <Route path="/self" exact component = {Self} />
-                    <Route path="/experiences" exact component = {Experiences} />
+                  <Switch location={location} key={location.pathname.split('/')[1]}>
+                    <Route path="/Personal-Website" component = {Home} />
+                    <Route path="/self" component = {Self} />
+                    <Route path="/experiences" component = {Experiences} />
                   </Switch>
                 </AnimatePresence>
               </StyledApp>
