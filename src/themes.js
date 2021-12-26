@@ -135,7 +135,7 @@ export const GlobalStyles = createGlobalStyle `
     }
 
     .activeExperiencesLink {
-        display: inline-block;
+        display: block;
         ${(props) => (props.theme.purpleColor !== "light") ? 
             css`background: linear-gradient(180deg, #08C8F6 0%, rgba(8,200,246,1) 0%, rgba(124,136,255,0.72) 100%);
               -webkit-background-clip: text;
