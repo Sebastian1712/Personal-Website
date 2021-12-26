@@ -16,7 +16,7 @@ const StyledExperiencesNav = styled.div`
 `
 
 const StyledExperiencesLink = styled(NavLink)`
-  display: flex;
+  display: absolute;
   justify-content: center;
   text-decoration: none;
   cursor: pointer;
