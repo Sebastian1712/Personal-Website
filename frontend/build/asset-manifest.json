@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Personal-Website/static/css/main.1ab52704.chunk.css",
+    "main.js": "/Personal-Website/static/js/main.ff20eeff.chunk.js",
+    "main.js.map": "/Personal-Website/static/js/main.ff20eeff.chunk.js.map",
+    "runtime-main.js": "/Personal-Website/static/js/runtime-main.c6d9c42e.js",
+    "runtime-main.js.map": "/Personal-Website/static/js/runtime-main.c6d9c42e.js.map",
+    "static/js/2.0f332a81.chunk.js": "/Personal-Website/static/js/2.0f332a81.chunk.js",
+    "static/js/2.0f332a81.chunk.js.map": "/Personal-Website/static/js/2.0f332a81.chunk.js.map",
+    "static/js/3.d0421470.chunk.js": "/Personal-Website/static/js/3.d0421470.chunk.js",
+    "static/js/3.d0421470.chunk.js.map": "/Personal-Website/static/js/3.d0421470.chunk.js.map",
+    "index.html": "/Personal-Website/index.html",
+    "static/css/main.1ab52704.chunk.css.map": "/Personal-Website/static/css/main.1ab52704.chunk.css.map",
+    "static/js/2.0f332a81.chunk.js.LICENSE.txt": "/Personal-Website/static/js/2.0f332a81.chunk.js.LICENSE.txt",
+    "static/media/newIntelIcon.a0024053.png": "/Personal-Website/static/media/newIntelIcon.a0024053.png",
+    "static/media/sebastianIcon.e69ac8e9.png": "/Personal-Website/static/media/sebastianIcon.e69ac8e9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6d9c42e.js",
+    "static/js/2.0f332a81.chunk.js",
+    "static/css/main.1ab52704.chunk.css",
+    "static/js/main.ff20eeff.chunk.js"
+  ]
+}
