@@ -28,18 +28,9 @@ function Experiences({ routes }: any) {
       transition={transitionSettings}>
         <ExperiencesNav/>
         <Switch>
-            {/* <Route exact path={match.path}>
-              <Jobs/>
-            </Route>
-            <Route path={`${match.path}/projects`}>
-              <Projects/>
-            </Route>
-            <Route path={`${match.path}/one`}>
-              <JobsBlog/>
-            </Route> */}
-            {routes.map((route: any, i: any) => (
-              <RouteWithSubRoutes key={i} {...route}/>
-            ))}
+          {routes.map((route: any, i: any) => (
+            <RouteWithSubRoutes key={i} {...route}/>
+          ))}
         </Switch>
 
       </motion.div>
