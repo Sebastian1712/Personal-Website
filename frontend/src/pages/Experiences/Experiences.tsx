@@ -7,8 +7,9 @@ import ExperiencesNav from './ExperiencesNav';
 import Projects from './Projects';
 import Jobs from './Jobs';
 import JobsBlog from './JobsBlog';
+import { routes, RouteWithSubRoutes } from '../../routes/Routes'
 
-function Experiences() {
+function Experiences({ routes }: any) {
 
     const match = useRouteMatch();
 
@@ -27,15 +28,9 @@ function Experiences() {
       transition={transitionSettings}>
         <ExperiencesNav/>
         <Switch>
-            <Route exact path={match.path}>
-              <Jobs/>
-            </Route>
-            <Route path={`${match.path}/projects`}>
-              <Projects/>
-            </Route>
-            <Route path={`${match.path}/one`}>
-              <JobsBlog/>
-            </Route>
+          {routes.map((route: any, i: any) => (
+            <RouteWithSubRoutes key={i} {...route}/>
+          ))}
         </Switch>
 
       </motion.div>
