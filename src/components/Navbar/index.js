@@ -4,6 +4,9 @@ import { BsSun } from "react-icons/bs";
 import { BsMoonStars } from "react-icons/bs";
 import styled from 'styled-components'
 import  './navigation.css'
+import { useLocation } from 'react-router-dom';
+
+const excludedPaths = ["/experiences/one"];
 
 const Toggle = styled.button`
     position: absolute;
@@ -20,6 +23,9 @@ const Toggle = styled.button`
 
 function NavBar(props) {
 
+    let location = useLocation();
+
+    if (excludedPaths.some((item) => location.pathname.includes(item))) return null;
     function toggleTheme() {
         if (props.theme === "light") {
             props.setTheme("dark");
@@ -29,7 +35,7 @@ function NavBar(props) {
     };
 
     const icon = props.theme === "light" ? <BsMoonStars size="30" className="themeIcons"/> : <BsSun size="30" className="themeIcons"/>;
-
+    console.log("Rendering nav bar");
     return (
         <header className="primary-header flex">
             <Nav>

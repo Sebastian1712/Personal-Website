@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledExperiencesNav = styled.div`
@@ -28,7 +28,15 @@ const StyledExperiencesLink = styled(NavLink)`
     }
 `;
 
+const excludedPaths = ["/experiences/one"];
+
+
 const ExperiencesNav = () => {
+
+    let location = useLocation();
+
+    if (excludedPaths.some((item) => location.pathname.includes(item))) return null;
+
     return(
         <div>
             <StyledExperiencesNav>
