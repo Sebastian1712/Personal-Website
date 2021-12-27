@@ -1,0 +1,59 @@
+
+.musicAnimation {
+    height: 50px;
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: left;
+    margin-top: -28%;
+    margin-left: 20px;
+}
+
+.musicAnimation .stroke {
+    display: block;
+    position: relative;
+    background: linear-gradient(45deg, #0006ff, #a801ff);;
+    height: 100%;
+    width: 5px;
+    border-radius: 50px;
+    margin: 0 5px;
+    animation: animate 1.2s linear infinite;
+}
+
+@keyframes animate {
+    50%{
+        height: 20%;
+    }
+
+    100%{
+        height: 100%;
+    }
+}
+
+.stroke:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.stroke:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.stroke:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.stroke:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.stroke:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+.stroke:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.stroke:nth-child(7) {
+    animation-delay: 0s;
+}
