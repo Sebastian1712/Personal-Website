@@ -1,5 +1,5 @@
 import { createGlobalStyle, css } from "styled-components"
-import memoji from '../public/sebastianIcon.png'
+import memoji from './public/sebastianIcon.png'
 
 export const lightTheme = {
     body: "#F7F2EC",

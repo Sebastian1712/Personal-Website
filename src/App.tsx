@@ -4,10 +4,10 @@ import styled, { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from './themes.js';
 import { AnimatePresence } from 'framer-motion';
 import { Route, Switch, useLocation } from 'react-router-dom';
-import NavBar from '../components/Navbar';
-import Home from '../pages/Home/Home';
-import Experiences from '../pages/Experiences/Experiences';
-import Self from '../pages/Self/Self';
+import NavBar from './components/Navbar';
+import Home from './pages/Home/Home';
+import Experiences from './pages/Experiences/Experiences';
+import Self from './pages/Self/Self';
 
 const StyledApp = styled.div`
     color: ${props => props.theme.fontColor};
