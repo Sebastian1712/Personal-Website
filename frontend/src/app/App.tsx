@@ -8,6 +8,7 @@ import NavBar from '../components/Navbar';
 import Home from '../pages/Home/Home';
 import Experiences from '../pages/Experiences/Experiences';
 import Self from '../pages/Self/Self';
+import { routes } from '../routes/Routes';
 
 const StyledApp = styled.div`
     color: ${props => props.theme.fontColor};
@@ -30,9 +31,11 @@ function App() {
                 <NavBar theme={theme} setTheme={setTheme}/>
                 <AnimatePresence exitBeforeEnter initial={false}>
                   <Switch location={location} key={location.pathname.split('/')[1]}>
-                    <Route exact path="/Personal-Website" component = {Home} />
-                    <Route path="/experiences" component = {Experiences} />
-                    <Route path="/self" component = {Self} />
+                    {routes.map((route) => (
+                      <Route path={route.path}>
+                        <route.component/>
+                      </Route>
+                    ))}
                   </Switch>
                 </AnimatePresence>
               </StyledApp>
