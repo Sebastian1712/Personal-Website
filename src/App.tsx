@@ -15,6 +15,7 @@ const StyledApp = styled.div`
 
 function App() {
   const location = useLocation();
+  console.log("INSIDE OF APP")
 
   useEffect(() => {
     document.title = "Sebastian Hernandez"
@@ -29,9 +30,9 @@ function App() {
                 <NavBar theme={theme} setTheme={setTheme}/>
                 <AnimatePresence exitBeforeEnter initial={false}>
                   <Switch location={location} key={location.pathname.split('/')[1]}>
-                    <Route path="/Personal-Website" component = {Home} />
-                    <Route path="/self" component = {Self} />
+                    <Route exact path="/Personal-Website" component = {Home} />
                     <Route path="/experiences" component = {Experiences} />
+                    <Route path="/self" component = {Self} />
                   </Switch>
                 </AnimatePresence>
               </StyledApp>

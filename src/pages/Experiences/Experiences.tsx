@@ -6,11 +6,11 @@ import { Route, Switch, useRouteMatch } from 'react-router-dom';
 import ExperiencesNav from './ExperiencesNav';
 import Projects from './Projects';
 import Jobs from './Jobs';
+import JobsBlog from './JobsBlog';
 
 function Experiences() {
 
     const match = useRouteMatch();
-    console.log("This is the match path " + match.path);
 
     useEffect(() => {
       document.title = "Sebastian | Experiences"
@@ -27,11 +27,14 @@ function Experiences() {
       transition={transitionSettings}>
         <ExperiencesNav/>
         <Switch>
+            <Route exact path={match.path}>
+              <Jobs/>
+            </Route>
             <Route path={`${match.path}/projects`}>
               <Projects/>
             </Route>
-            <Route path={match.path}>
-              <Jobs/>
+            <Route path={`${match.path}/one`}>
+              <JobsBlog/>
             </Route>
         </Switch>
 
