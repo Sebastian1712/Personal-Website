@@ -7,6 +7,7 @@ import microsoftLogo from '../../public/microsoftIcon.png';
 import intelLogo from '../../public/newIntelIcon.png';
 import { FrameConfigurations } from '../../components/Frame/FrameConfigurations';
 import { FrameArtifacts } from '../../components/Frame/FrameArtifacts';
+import { experiences } from './ExperiencesData';
 
 const experienceOne: FrameConfigurations & FrameArtifacts = {
   width: 300,
@@ -36,6 +37,13 @@ const experienceThree: FrameConfigurations & FrameArtifacts = {
   icon: intelLogo,
   title: "Intel",
   description: "Business Ops Intern"
+}
+
+const jobFrameConfiguration: FrameConfigurations = {
+  width: 300,
+  height: 150,
+  strokeSize: 3,
+  color: "F7F2EC"
 }
 
 function Jobs() {
