@@ -6,7 +6,7 @@ export const lightTheme = {
     fontColor: "#000",
     purpleColor: "light",
     iconColor: "#000",
-    blueColor: "#DBC6FF"
+    blueColor: "#a88beb"
 }
 
 export const darkTheme = {
@@ -90,7 +90,7 @@ export const GlobalStyles = createGlobalStyle `
                             `;
                         default:
                             return css`
-                                color: #DBC6FF;
+                                color: #a88beb;
                             `;
                     }
                 }}
@@ -140,9 +140,16 @@ export const GlobalStyles = createGlobalStyle `
             css`background: linear-gradient(180deg, #08C8F6 0%, rgba(8,200,246,1) 0%, rgba(124,136,255,0.72) 100%);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;` :
-            css`background: linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%);
+            css`background: linear-gradient(180deg, #a88beb 31.25%, #f8ceec 100%);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;`
+        }
+    }
+
+    .historyLine {
+        ${(props) => (props.theme.purpleColor !== "light") ? 
+            css`border-image: linear-gradient(to bottom, #08C8F6, rgba(8,200,246,1) 10%, rgba(124,136,255,0.72)) 1 100%;` :
+            css`border-image: linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%) 1 100%;`
         }
     }
 `;

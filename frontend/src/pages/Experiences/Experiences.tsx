@@ -7,7 +7,16 @@ import ExperiencesNav from './ExperiencesNav';
 import Projects from './Projects';
 import Jobs from './Jobs';
 import JobsBlog from './JobsBlog';
-import { routes, RouteWithSubRoutes } from '../../routes/Routes'
+import { routes, RouteWithSubRoutes } from '../../routes/Routes';
+import styled from 'styled-components';
+
+const StyledHistoryLine = styled.div`
+  border-width: 2px;
+  border-style: solid;
+  height: 80%;
+  position: absolute;
+  left: 64%;
+`;
 
 function Experiences({ routes }: any) {
 
