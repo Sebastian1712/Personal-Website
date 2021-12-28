@@ -9,9 +9,10 @@ import Jobs from './Jobs';
 import { experiences } from './ExperiencesData';
 import ExperiencesBlog from './ExperiencesBlog';
 
-function Experiences({ routes }: any) {
+function Experiences() {
 
     const match = useRouteMatch();
+    console.log("Inside of experiences component:");
 
     useEffect(() => {
       document.title = "Sebastian | Experiences"
@@ -34,11 +35,13 @@ function Experiences({ routes }: any) {
           <Route path={`${match.path}/projects`}>
             <Projects/>
           </Route>
-          {experiences.map((experience, i) => (
-            <Route key={i} path={`${match.path}/${experience.path}`}>
-              <ExperiencesBlog {...experience}/>
+        { experiences.map((experience, i) => {
+          console.log("path = " + match.path + experience.path);
+          return (
+            <Route key={i} path={`${match.path}${experience.path}`}>
+              <ExperiencesBlog experience={experience}/>
             </Route>
-          ))}
+        )})}
         </Switch>
 
       </motion.div>

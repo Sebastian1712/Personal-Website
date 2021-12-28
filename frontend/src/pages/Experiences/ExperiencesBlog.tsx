@@ -1,10 +1,11 @@
 import React from "react";
 import { JobType } from "./JobType";
 
-export const ExperiencesBlog = (experience: JobType) => {
+export const ExperiencesBlog = (props: {experience: JobType}) => {
+    console.log("Entering Blog...")
     return (
         <>
-            <h1 className="selfDiv">{experience.companyName}</h1>
+            <h1 className="selfDiv">{props.experience.companyName}</h1>
         </>
     );
 }

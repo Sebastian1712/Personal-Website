@@ -5,6 +5,7 @@ import './Experiences.css';
 import Frame from './Frame';
 import { FrameConfigurations } from './FrameConfigurations';
 import { JobType } from './JobType';
+import { useRouteMatch } from 'react-router-dom';
 
 const jobFrameConfiguration: FrameConfigurations = {
   width: 300,
@@ -29,7 +30,7 @@ function Jobs(props: {experiences: JobType[]}) {
       variants={pageTransitions}
       transition={transitionSettings}>
         { props.experiences.map((experience, i) => (
-            <Frame key={i} configuration={jobFrameConfiguration} experience={experience}/>
+            <Frame key={i} configuration={jobFrameConfiguration} experience={experience} parentPath={"/experiences"}/>
         ))}
       </motion.div>
     );

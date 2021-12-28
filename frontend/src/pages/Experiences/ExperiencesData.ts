@@ -25,7 +25,7 @@ export const experiences: JobType[] = [
                 icon: "<insertIcon>"
             }
         ],
-        path: "/experiences/microsoft-swe-intern"
+        path: "/microsoft-swe-intern"
     },
     {
         companyName: "Microsoft",
@@ -49,7 +49,7 @@ export const experiences: JobType[] = [
                 icon: "<insertIcon>"
             }
         ],
-        path: "/experiences/microsoft-explore-intern"
+        path: "/microsoft-explore-intern"
     },
     {
         companyName: "Intel",
@@ -59,6 +59,6 @@ export const experiences: JobType[] = [
             season: "Summer", 
             year: 2019
         },
-        path: "/experiences/intel-bizops-intern"
+        path: "/intel-bizops-intern"
     }
 ]
