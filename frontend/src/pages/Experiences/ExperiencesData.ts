@@ -1,9 +1,11 @@
 import { JobType } from "./JobType";
+import microsoftLogo from '../../public/microsoftIcon.png';
+import intelLogo from '../../public/newIntelIcon.png';
 
 export const experiences: JobType[] = [
     {
         companyName: "Microsoft",
-        companyIcon: "<inserIcon>",
+        companyIcon: microsoftLogo,
         position: "Software Engineering Intern",
         date: {
             season: "Summer", 
@@ -27,7 +29,7 @@ export const experiences: JobType[] = [
     },
     {
         companyName: "Microsoft",
-        companyIcon: "<inserIcon>",
+        companyIcon: microsoftLogo,
         position: "Explore Intern",
         date: {
             season: "Summer", 
@@ -51,7 +53,7 @@ export const experiences: JobType[] = [
     },
     {
         companyName: "Intel",
-        companyIcon: "<inserIcon>",
+        companyIcon: intelLogo,
         position: "Business Operations Intern",
         date: {
             season: "Summer", 

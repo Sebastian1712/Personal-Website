@@ -29,7 +29,7 @@ function Experiences({ routes }: any) {
         <ExperiencesNav/>
         <Switch>
           <Route exact path={match.path}>
-            <Jobs/>
+            <Jobs experiences={experiences}/>
           </Route>
           <Route path={`${match.path}/projects`}>
             <Projects/>
