@@ -44,8 +44,6 @@ const StyledFrame = styled.div<FrameConfigurations & FrameArtifacts>`
 `;
 
 const Frame = (props: {configuration: FrameConfigurations, experience: JobType, parentPath: string}) => {
-    console.log("Inside of frame:");
-    console.log("path = " + props.parentPath + props.experience.path);
     return (
         <StyledLinkFrame to={`${props.parentPath}${props.experience.path}`} className="styledFrameLink">
             <StyledFrame className='styleFrame' 

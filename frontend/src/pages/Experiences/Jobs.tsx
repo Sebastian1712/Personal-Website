@@ -5,7 +5,6 @@ import './Experiences.css';
 import Frame from './Frame';
 import { FrameConfigurations } from './FrameConfigurations';
 import { JobType } from './JobType';
-import { useRouteMatch } from 'react-router-dom';
 
 const jobFrameConfiguration: FrameConfigurations = {
   width: 300,
@@ -21,7 +20,6 @@ function Jobs(props: {experiences: JobType[]}) {
     }, []);
 
     return (
-      
       <motion.div 
       className="experiencesDiv" 
       initial="initial"

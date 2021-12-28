@@ -12,7 +12,6 @@ import ExperiencesBlog from './ExperiencesBlog';
 function Experiences() {
 
     const match = useRouteMatch();
-    console.log("Inside of experiences component:");
 
     useEffect(() => {
       document.title = "Sebastian | Experiences"
@@ -36,7 +35,6 @@ function Experiences() {
             <Projects/>
           </Route>
         { experiences.map((experience, i) => {
-          console.log("path = " + match.path + experience.path);
           return (
             <Route key={i} path={`${match.path}${experience.path}`}>
               <ExperiencesBlog experience={experience}/>
