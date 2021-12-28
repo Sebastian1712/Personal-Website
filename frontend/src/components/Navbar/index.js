@@ -5,8 +5,7 @@ import { BsMoonStars } from "react-icons/bs";
 import styled from 'styled-components'
 import  './navigation.css'
 import { useLocation } from 'react-router-dom';
-
-const excludedPaths = ["/experiences/one"];
+import { excludedPaths } from '../../app/ExcludedPaths'
 
 const Toggle = styled.button`
     position: absolute;

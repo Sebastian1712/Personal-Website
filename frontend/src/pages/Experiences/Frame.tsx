@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FrameConfigurations } from './FrameConfigurations';
 import { FrameArtifacts } from './FrameArtifacts';
 import { NavLink } from 'react-router-dom';
+import { JobType } from './JobType';
 
 const StyledLinkFrame = styled(NavLink)`
     display: contents;
@@ -42,21 +43,20 @@ const StyledFrame = styled.div<FrameConfigurations & FrameArtifacts>`
     }
 `;
 
-const Frame = ({ width, height, strokeSize, color, icon, title, description }: FrameConfigurations & FrameArtifacts) => {
-
+const Frame = (props: {configuration: FrameConfigurations, experience: JobType, parentPath: string}) => {
     return (
-        <StyledLinkFrame to='/experiences/one' className="styledFrameLink">
+        <StyledLinkFrame to={`${props.parentPath}${props.experience.path}`} className="styledFrameLink">
             <StyledFrame className='styleFrame' 
-            width={width}
-            height={height}
-            strokeSize={strokeSize}
-            color={color}
-            icon={icon}
-            title={title}
-            description={description}>
-                    <StyledImage src={icon}></StyledImage>
-                    <StyledText>{title}</StyledText>
-                    <StyledText>{description}</StyledText>
+            width={props.configuration.width}
+            height={props.configuration.height}
+            strokeSize={props.configuration.strokeSize}
+            color={props.configuration.color}
+            icon={props.experience.companyIcon}
+            title={props.experience.companyName}
+            description={props.experience.position}>
+                    <StyledImage src={props.experience.companyIcon}></StyledImage>
+                    <StyledText>{props.experience.companyName}</StyledText>
+                    <StyledText>{props.experience.position}</StyledText>
             </StyledFrame>
         </StyledLinkFrame>
     );

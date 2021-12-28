@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
+import { excludedPaths } from "../../app/ExcludedPaths";
 
 const StyledExperiencesNav = styled.div`
   display: flex;
@@ -27,9 +28,6 @@ const StyledExperiencesLink = styled(NavLink)`
         font-size: 1.3rem;
     }
 `;
-
-const excludedPaths = ["/experiences/one"];
-
 
 const ExperiencesNav = () => {
 
