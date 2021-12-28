@@ -4,9 +4,7 @@ import { pageTransitions, transitionSettings } from '../../components/Transition
 import './Experiences.css';
 import { Route, Switch, useRouteMatch } from 'react-router-dom';
 import ExperiencesNav from './ExperiencesNav';
-import Projects from './Projects';
 import Jobs from './Jobs';
-import JobsBlog from './JobsBlog';
 import { routes, RouteWithSubRoutes } from '../../routes/Routes'
 
 function Experiences({ routes }: any) {
