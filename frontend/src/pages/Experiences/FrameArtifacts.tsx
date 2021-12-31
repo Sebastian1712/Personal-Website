@@ -1,5 +1,7 @@
+import { IconType } from "react-icons";
+
 export type FrameArtifacts = {
-    icon?: string,
+    icon?: IconType,
     title?: string,
     description?: string
 }

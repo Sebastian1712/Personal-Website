@@ -9,12 +9,6 @@ const StyledLinkFrame = styled(NavLink)`
     display: contents;
 `;
 
-const StyledImage = styled.img`
-    width: 25px;
-    height: 25px;
-    padding: .3rem;
-`;
-
 const StyledText = styled.text`
     font-weight: 700;
     padding: .2rem;
@@ -44,7 +38,9 @@ const StyledFrame = styled.div<FrameConfigurations & FrameArtifacts>`
 `;
 
 const Frame = (props: {configuration: FrameConfigurations, experience: JobType, parentPath: string}) => {
+
     return (
+    <>
         <StyledLinkFrame to={`${props.parentPath}${props.experience.path}`} className="styledFrameLink">
             <StyledFrame className='styleFrame' 
             width={props.configuration.width}
@@ -54,11 +50,12 @@ const Frame = (props: {configuration: FrameConfigurations, experience: JobType, 
             icon={props.experience.companyIcon}
             title={props.experience.companyName}
             description={props.experience.position}>
-                    <StyledImage src={props.experience.companyIcon}></StyledImage>
+                    <props.experience.companyIcon size={23} className='icon'/>
                     <StyledText>{props.experience.companyName}</StyledText>
                     <StyledText>{props.experience.position}</StyledText>
             </StyledFrame>
         </StyledLinkFrame>
+    </>
     );
 }
 

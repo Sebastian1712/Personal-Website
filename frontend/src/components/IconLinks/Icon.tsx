@@ -4,7 +4,6 @@ import { SiGithub, SiLinkedin, SiGmail } from 'react-icons/si';
 import { IconContext } from "react-icons";
 import './Icons.css';
 
-
 const IconsDiv = styled.div`
     display: flex;
     flex-direction: row;

@@ -48,10 +48,12 @@ export const GlobalStyles = createGlobalStyle `
                 case "dark":
                     return css`
                         fill: #08C8F6;
+                        transition: all .5s ease;
                     `;
                 default:
                     return css`
                         fill: #DBC6FF;
+                        transition: all .5s ease;
                     `;
             }
         }}
@@ -68,10 +70,12 @@ export const GlobalStyles = createGlobalStyle `
                 case "dark":
                     return css`
                         fill: #08C8F6;
+                        transition: all .5s ease;
                     `;
                 default:
                     return css`
                         fill: #DBC6FF;
+                        transition: all .5s ease;
                     `;
             }
         }}
@@ -120,6 +124,24 @@ export const GlobalStyles = createGlobalStyle `
         &:hover {
             border-color: ${(props) => (props.theme.purpleColor === "light") ? lightTheme.blueColor : darkTheme.blueColor};
             transition: all .5s ease-in;
+            .icon {
+                transition: all .5s ease-in;
+                ${(props) => {
+                    switch (props.theme.purpleColor) {
+                        case "dark":
+                            return css`
+                                color: #08C8F6;
+                                transition: all .5s ease-in;
+                            `;
+                        default:
+                            return css`
+                                color: #DBC6FF;
+                                transition: all .5s ease-in;
+                            `;
+                    }
+                }}
+                transition: all .5s ease;
+            }
         }
     }
 
