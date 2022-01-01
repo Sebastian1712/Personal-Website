@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { pageTransitions, transitionSettings } from '../../components/Transitions';
 import './Experiences.css';
 import { Route, Switch, useRouteMatch } from 'react-router-dom';
-import ExperiencesNav from './ExperiencesNav';
-import Projects from './Projects';
-import Jobs from './Jobs';
-import { experiences } from './ExperiencesData';
-import ExperiencesBlog from './ExperiencesBlog';
+import ExperiencesNav from './components/ExperiencesNav';
+import Projects from './components/Projects';
+import Jobs from './components/Jobs';
+import { experiences } from '../../data/experiences/ExperiencesData';
+import ExperiencesBlog from './components/ExperiencesBlog';
 
 function Experiences() {
 

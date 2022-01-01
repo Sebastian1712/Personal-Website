@@ -1,6 +1,7 @@
-import { JobType } from "./JobType";
+import { JobType } from '../../types/JobType';
 import { FaMicrosoft } from 'react-icons/fa/index';
 import { SiIntel } from 'react-icons/si/index';
+
 export const experiences: JobType[] = [
     {
         companyName: "Microsoft",
