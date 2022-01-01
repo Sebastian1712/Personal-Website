@@ -18,7 +18,6 @@ function Experiences() {
     }, []);
 
     return (
-      
       <motion.div 
       className="experiencesDiv" 
       initial="initial"
