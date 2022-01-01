@@ -140,7 +140,6 @@ export const GlobalStyles = createGlobalStyle `
                             `;
                     }
                 }}
-                transition: all .5s ease;
             }
         }
     }
