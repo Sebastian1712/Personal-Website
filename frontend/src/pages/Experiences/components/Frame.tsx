@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FrameConfigurations } from './FrameConfigurations';
-import { FrameArtifacts } from './FrameArtifacts';
+import { FrameConfigurations } from '../../../types/FrameConfigurations';
+import { FrameArtifacts } from '../../../types/FrameArtifacts';
 import { NavLink } from 'react-router-dom';
-import { JobType } from './JobType';
+import { JobType } from '../../../types/JobType';
 
 const StyledLinkFrame = styled(NavLink)`
     display: contents;

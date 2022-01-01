@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { pageTransitions, transitionSettings } from '../../components/Transitions';
-import './Experiences.css';
+import { pageTransitions, transitionSettings } from '../../../components/Transitions';
+import '../Experiences.css';
 import Frame from './Frame';
-import { FrameConfigurations } from './FrameConfigurations';
-import { JobType } from './JobType';
+import { FrameConfigurations } from '../../../types/FrameConfigurations';
+import { JobType } from '../../../types/JobType';
 
 const jobFrameConfiguration: FrameConfigurations = {
   width: 300,

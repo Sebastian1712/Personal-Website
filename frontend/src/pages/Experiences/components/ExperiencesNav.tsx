@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import { excludedPaths } from "../../app/ExcludedPaths";
+import { excludedPaths } from "../../../app/ExcludedPaths";
 
 const StyledExperiencesNav = styled.div`
   display: flex;

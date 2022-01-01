@@ -1,5 +1,5 @@
 import React from "react";
-import { JobType } from "./JobType";
+import { JobType } from "../../../types/JobType";
 
 export const ExperiencesBlog = (props: {experience: JobType}) => {
     console.log("Entering Blog...")

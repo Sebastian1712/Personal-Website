@@ -1,8 +1,8 @@
 import { Route } from "react-router-dom";
 import Experiences from "../pages/Experiences/Experiences";
-import Jobs from "../pages/Experiences/Jobs";
-import JobsBlog from "../pages/Experiences/JobsBlog";
-import Projects from "../pages/Experiences/Projects";
+import Jobs from "../pages/Experiences/components/Jobs";
+import JobsBlog from "../pages/Experiences/components/JobsBlog";
+import Projects from "../pages/Experiences/components/Projects";
 import Home from "../pages/Home/Home";
 import Self from "../pages/Self/Self";
 

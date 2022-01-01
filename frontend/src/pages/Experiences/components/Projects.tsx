@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { pageTransitions, transitionSettings } from "../../components/Transitions";
+import { transitionSettings, pageTransitions } from "../../../components/Transitions";
 
 const Projects = () => {
     return (
