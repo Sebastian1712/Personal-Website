@@ -150,6 +150,11 @@ export const GlobalStyles = createGlobalStyle `
         text-decoration: none;
     }
 
+    .techFrame {
+        border: 1px solid ${(props) => (props.theme.purpleColor === "light") ? "#DBC6FF" : "#08C8F6"};
+        text-decoration: none;
+    }
+
     .experiencesLink {
         size: 0;
         color: ${(props) => (props.theme.purpleColor === "light") ? "#000" : "#fff"};

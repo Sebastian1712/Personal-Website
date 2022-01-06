@@ -1,6 +1,7 @@
 import { JobType } from '../../types/JobType';
 import { FaMicrosoft } from 'react-icons/fa/index';
-import { SiIntel } from 'react-icons/si/index';
+import { SiIntel, SiReact, SiMicrosoftazure, SiCsharp, SiUnity, SiMicrosoftexcel, SiVisualstudiocode } from 'react-icons/si/index';
+import { BsClipboardData, BsHeadsetVr } from 'react-icons/bs/index'
 
 export const experiences: JobType[] = [
     {
@@ -14,15 +15,15 @@ export const experiences: JobType[] = [
         techStack: [
             {
                 name: "React",
-                icon: "<insertIcon>"
+                icon: SiReact
             },
             {
                 name: "C#",
-                icon: "<insertIcon>"
+                icon: SiCsharp
             },
             {
                 name: "Azure",
-                icon: "<insertIcon>"
+                icon: SiMicrosoftazure
             }
         ],
         path: "/microsoft-swe-intern"
@@ -38,15 +39,15 @@ export const experiences: JobType[] = [
         techStack: [
             {
                 name: "C#",
-                icon: "<insertIcon>"
+                icon: SiCsharp
             },
             {
                 name: "Unity",
-                icon: "<insertIcon>"
+                icon: SiUnity
             },
             {
                 name: "Hololens2",
-                icon: "<insertIcon>"
+                icon: BsHeadsetVr
             }
         ],
         path: "/microsoft-explore-intern"
@@ -59,6 +60,20 @@ export const experiences: JobType[] = [
             season: "Summer", 
             year: 2019
         },
+        techStack: [
+            {
+                name: "Excel",
+                icon: SiMicrosoftexcel
+            },
+            {
+                name: "PowerBi",
+                icon: BsClipboardData
+            },
+            {
+                name: "VisualBasic",
+                icon: SiVisualstudiocode
+            }
+        ],
         path: "/intel-bizops-intern"
     }
 ]

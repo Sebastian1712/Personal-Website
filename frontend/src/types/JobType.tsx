@@ -7,6 +7,6 @@ export type JobType = {
     companyIcon: IconType,
     position: string,
     date: TimeFrameType,
-    techStack?: TechStackType[],
+    techStack: TechStackType[],
     path: string
 }
