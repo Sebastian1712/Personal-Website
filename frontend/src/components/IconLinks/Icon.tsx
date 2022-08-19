@@ -11,7 +11,7 @@ const IconsDiv = styled.div`
     align-items: center;
     width: 100%;
     height: 50px;
-    margin-top: 14%;
+    margin-top: 20%;
     @media only screen and (max-width: 500px) {
         position: absolute;
         justify-content: center;

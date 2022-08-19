@@ -2,7 +2,7 @@ import { createGlobalStyle, css } from "styled-components"
 import memoji from './public/sebastianIcon.png'
 
 export const lightTheme = {
-    body: "#F7F2EC",
+    body: "#F9F6EE",
     fontColor: "#000",
     purpleColor: "light",
     iconColor: "#000",
