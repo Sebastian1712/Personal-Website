@@ -23,7 +23,6 @@ const StyledText = styled.p`
 `
 
 export default function TechStackBox(props: {icons: (IconType)[]}) {
-    console.log("Inside of tech stack box component");
     return (
         <>
             <StyledTechFrame className="techFrame">

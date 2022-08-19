@@ -6,7 +6,7 @@ export const lightTheme = {
     fontColor: "#000",
     purpleColor: "light",
     iconColor: "#000",
-    blueColor: "#DBC6FF"
+    blueColor: "#4D675D"
 }
 
 export const darkTheme = {
@@ -52,7 +52,7 @@ export const GlobalStyles = createGlobalStyle `
                     `;
                 default:
                     return css`
-                        fill: #DBC6FF;
+                        fill: #4D675D;
                         transition: all .5s ease;
                     `;
             }
@@ -94,7 +94,7 @@ export const GlobalStyles = createGlobalStyle `
                             `;
                         default:
                             return css`
-                                color: #DBC6FF;
+                                color: #4D675D;
                             `;
                     }
                 }}
@@ -113,7 +113,7 @@ export const GlobalStyles = createGlobalStyle `
                             `;
                         default:
                             return css`
-                                color: #DBC6FF;
+                                color: #4D675D;
                             `;
                     }
                 }}
@@ -135,7 +135,7 @@ export const GlobalStyles = createGlobalStyle `
                             `;
                         default:
                             return css`
-                                color: #DBC6FF;
+                                color: #4D675D;
                                 transition: all .5s ease-in;
                             `;
                     }
@@ -151,7 +151,7 @@ export const GlobalStyles = createGlobalStyle `
     }
 
     .techFrame {
-        border: 1px solid ${(props) => (props.theme.purpleColor === "light") ? "#DBC6FF" : "#08C8F6"};
+        border: 1px solid ${(props) => (props.theme.purpleColor === "light") ? "#4D675D" : "#08C8F6"};
         text-decoration: none;
     }
 
@@ -166,9 +166,7 @@ export const GlobalStyles = createGlobalStyle `
             css`background: linear-gradient(180deg, #08C8F6 0%, rgba(8,200,246,1) 0%, rgba(124,136,255,0.72) 100%);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;` :
-            css`background: linear-gradient(180deg, #DBC6FF 31.25%, rgba(249, 197, 209, 0.44) 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;`
+            css`color: #4D675D;`
         }
     }
 `;

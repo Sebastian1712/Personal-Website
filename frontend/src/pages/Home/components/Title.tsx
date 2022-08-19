@@ -42,7 +42,6 @@ const TitleParagraph = styled.p`
     display: inline-block;
     width: 85%;
   }
-
 `
 
 const TitleLine = styled.div`
