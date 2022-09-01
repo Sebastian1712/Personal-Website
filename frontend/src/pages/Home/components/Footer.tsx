@@ -16,8 +16,7 @@ const FooterDiv = styled.div`
     @media only screen and (max-width: 500px) {
         width: 100%;
         height: 30%;
-        bottom: 0;
-        padding-bottom: 0;
+        top: 60%;
         position: absolute;
         display: flex;
         justify-content: center;

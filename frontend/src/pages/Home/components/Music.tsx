@@ -8,7 +8,7 @@ const MusicDiv = styled.div`
     flex-direction: column;
     align-items: center;
     align-content: center;
-    right: 90%;
+    right: 87%;
 
     @media only screen and (max-width: 500px) {
         position: relative;
