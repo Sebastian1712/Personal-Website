@@ -48,9 +48,6 @@ function NavBar(props) {
                     <NavLink to="/self" activeClassName='navLink-active' className="navLink">
                         Self
                     </NavLink>
-                    <Toggle onClick={toggleTheme}>
-                        {icon}
-                    </Toggle>
                 </NavMenu>
             </Nav>
         </header>

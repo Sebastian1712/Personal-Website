@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Title from './components/Title';
+import Footer from './components/Footer';
 import Icons from '../../components/IconLinks/Icon';
+import Music from './components/Music';
+import Title from './components/Title';
 import { motion } from 'framer-motion';
 import { pageTransitions, transitionSettings } from '../../components/Transitions';
 
@@ -20,11 +22,11 @@ function Home() {
       exit="hidden" 
       variants={pageTransitions}
       transition={transitionSettings}>
-
         <Title animate={animate} setAnimation={setAnimation}/>
-      
       </motion.div>
-      <Icons></Icons>
+      <Footer/>
+      {/* <Music/> */}
+      {/* <Icons></Icons> */}
     </>
     );
   }

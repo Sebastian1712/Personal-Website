@@ -9,9 +9,8 @@ const IconsDiv = styled.div`
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    height: 50px;
-    margin-top: 20%;
+    align-content: center;
+    margin-top: 3rem;
     @media only screen and (max-width: 500px) {
         position: absolute;
         justify-content: center;

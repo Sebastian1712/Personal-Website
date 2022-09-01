@@ -19,22 +19,22 @@ function App() {
     document.title = "Sebastian Hernandez"
   }, []);
 
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   return (
-          <ThemeProvider theme={theme==="light" ? lightTheme : darkTheme}>
-            <GlobalStyles/>
-            <StyledApp>
-                <NavBar theme={theme} setTheme={setTheme}/>
-                <AnimatePresence exitBeforeEnter initial={false}>
-                  <Switch location={location} key={location.pathname.split('/')[1]}>
-                    {routes.map((route, i) => (
-                      <RouteWithSubRoutes key={i} {...route}/>
-                    ))}
-                  </Switch>
-                </AnimatePresence>
-              </StyledApp>
-            </ThemeProvider>
+    <ThemeProvider theme={theme==="light" ? lightTheme : darkTheme}>
+      <GlobalStyles/>
+      <StyledApp>
+          <NavBar theme={theme} setTheme={setTheme}/>
+          <AnimatePresence exitBeforeEnter initial={false}>
+            <Switch location={location} key={location.pathname.split('/')[1]}>
+              {routes.map((route, i) => (
+                <RouteWithSubRoutes key={i} {...route}/>
+              ))}
+            </Switch>
+          </AnimatePresence>
+        </StyledApp>
+      </ThemeProvider>
   );
 }
 

@@ -1,20 +1,18 @@
 
 .musicAnimation {
-    height: 50px;
     display: flex;
     align-content: center;
     align-items: flex-end;
     justify-content: left;
-    margin-top: -28%;
-    margin-left: 20px;
+    height: 30px;
 }
 
 .musicAnimation .stroke {
-    display: block;
+    display: flex;
     position: relative;
     background: linear-gradient(45deg, #0006ff, #a801ff);;
     height: 100%;
-    width: 5px;
+    width: 7px;
     border-radius: 50px;
     margin: 0 5px;
     animation: animate 1.2s linear infinite;
