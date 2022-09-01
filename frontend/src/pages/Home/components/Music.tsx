@@ -8,8 +8,18 @@ const MusicDiv = styled.div`
     flex-direction: column;
     align-items: center;
     align-content: center;
-    margin-top: 3rem;
-    left: 1rem;
+    right: 90%;
+
+    @media only screen and (max-width: 500px) {
+        position: relative;
+        right: 0%;
+        padding-bottom: 10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
 `
 
 const JammingOutText = styled.text`

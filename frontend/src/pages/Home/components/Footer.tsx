@@ -4,13 +4,25 @@ import Icons from '../../../components/IconLinks/Icon';
 import Music from './Music';
 
 const FooterDiv = styled.div`
-    /* background: red; */
-    bottom: 0;
     display: flex;
+    justify-content: flex-end;
+    bottom: 0;
     flex-direction: column;
-    height: 125px;
     position: absolute;
     width: 100%;
+    align-items: center;
+    padding-bottom: 3%;
+
+    @media only screen and (max-width: 500px) {
+        width: 100%;
+        height: 30%;
+        bottom: 0;
+        padding-bottom: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 function Footer() {

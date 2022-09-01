@@ -5,17 +5,25 @@ import { IconContext } from "react-icons";
 import './Icons.css';
 
 const IconsDiv = styled.div`
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     align-content: center;
-    margin-top: 3rem;
+    gap: 15px;
+    left: 90%;
+    /* margin-top: 3rem; */
+
     @media only screen and (max-width: 500px) {
-        position: absolute;
+        position: relative;
+        left: 0%;
+        gap: 15px;
+        display: flex;
         justify-content: center;
-        bottom: 0px;
-        padding-bottom: 1%;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
     }
 `;
 

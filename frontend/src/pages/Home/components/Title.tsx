@@ -27,12 +27,10 @@ const Intro = styled.h1`
 `
 
 const TitleParagraph = styled.p`
-    display: flex;
     font-style: normal;
     font-size: 1.438em;
     line-height: 120%;
     margin-top: -1%;
-    margin-right: -18%;
     transition: all .5s ease;
     text-align: center;
     width: 52%;
